@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS3 Selectpr Basic</title>
+    <style>
+        ul{
+            overflow: hidden;
+        }
+        li{
+            width: 150px; 
+            float: left;
+            list-style: none;
+            text-align :center;
+            padding : 15px;
+            color: white;
+            cursor: pointer;
+
+            background: gray;
+        }
+        li:first-child {
+            border-radius: 10px 0 0 10px;
+        }
+        li:last-child {
+            border-radius: 0 10px 10px 0;
+        }
+        li:nth-child(2n) {
+            background-color: #0d8452;
+        }
+        li:nth-child(2n+1) {
+            background-color: #09a454;
+        }
+        li:hover{
+            background: black;
+        }
+        li:active{
+            background: lightgray;
+        }
+        ul li > a{
+            color : white;
+            text-decoration-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="https://www.never.com">NAVER</li></a>
+        <li><a href="https://www.daum.net">DAUM</li></a>
+        <li><a href="https://www.google.com">GOOGLE</li></a>
+        <li><a href="http://www.tjdaewoo.co.kr/">DWACADEMY</li></a>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8" />
+    <meta name="viewport" width="device-width, intial-scale=1.0" />
+    <title>Absolute Position</title>
+<head>
+    <style>
+        /*초기화*/
+        *{margin: 0; padding:0;}
+
+        body { background: skyblue;}
+
+        #container {
+            width:500px; height:250px;
+            top:50%; left:50%;
+
+            position: absolute;
+            margin-left: -250px;
+            margin-top: -125px;
+            background: pink;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>요소의 중앙 배치</h1>
+    </div>
+</body>
+</html>

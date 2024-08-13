@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" width="device-width, intial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin:0;padding:0;
+            font-family: "Nanum Gothic", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 12px;
+            overflow: hidden;
+        }
+
+        #wrap{
+            width:1200px;
+            height:300px;
+
+            margin: 0 auto;
+
+            position: relative;
+
+            background: #ffe8e8;
+        }
+
+        #header{
+            width:100%;
+            height:30px;
+
+            position: relative;
+            background-color: #555555;
+        }
+
+        #nav{
+            width:100%;
+            height:30px;
+
+            position: absolute;
+            overflow: hidden;
+        }
+
+        #nav > ul{
+            overflow: hidden;
+        }
+
+        #nav > ul > li{
+            height:80px;
+            list-style: none;
+            float:left;
+        }
+
+        #nav > ul > li:nth-child(1){
+            width:25%;
+            padding:10px;
+
+            box-sizing: border-box;
+
+            background-color: #fefefe;
+            background-image: url('images/logo.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 80%;
+
+            /*
+            font-size: 2.3em;
+            color: #FEFEFE;
+            */
+        }
+
+        #nav > ul > li:nth-child(2){
+            width:75%;
+        }
+
+        #service{
+            list-style: none;
+            overflow: hidden;
+        }
+
+        #service > li{
+            width:12.5%;
+            height:80px;
+
+            float:left;
+
+            background-color: #fefefe;
+            background-repeat: no-repeat;
+            background-position: center;
+
+            box-sizing: border-box;
+
+            cursor: pointer;
+
+
+            font-size: 1.2em;
+            font-weight: 600;
+            color: #000000;
+
+            text-align: center;
+
+            line-height: 25px;
+
+            padding-top: 20px;
+            box-sizing: border-box;
+        
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        <div id="nav">
+            <ul>
+                <li title="대전시 주요 서비스"></li>
+                <li>
+                    <ul id="service">
+                        <li>정보공개</li>
+                        <li>참여마당</li>
+                        <li>전자민원</li>
+                        <li>행정정보</li>
+                        <li>열린경제</li>
+                        <li>생활정보</li>
+                        <li>대전소개</li>
+                        <li>분야별정보</li>
+                    </ul>
+                </li>
+            </ul>   
+        </div>
+    </div>      
+</body>
+</html>
